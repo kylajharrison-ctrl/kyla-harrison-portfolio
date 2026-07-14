@@ -766,7 +766,7 @@ button:focus-visible {
 
 .editorial-about {
   background: var(--color-bg);
-  padding: 3rem 2.5rem;
+  padding: 3rem 2.5rem 3rem;
   border-bottom: 0.5px solid var(--color-border);
 }
 
