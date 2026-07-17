@@ -1260,6 +1260,10 @@ button:focus-visible {
   background: #e8eef5;
 }
 
+.case-study-hero.hero-purple {
+  background: #f2eaf5;
+}
+
 .case-study-hero-tag {
   display: inline-block;
   background: var(--color-tag-sage-bg);
@@ -1678,6 +1682,11 @@ button:focus-visible {
 .case-figma-iframe-wrap {
   padding: 0 1rem;
   overflow: hidden;
+}
+
+.case-prototype-hint-wrap {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .case-figma-scroll-hint {
