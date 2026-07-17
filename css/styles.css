@@ -1659,14 +1659,59 @@ button:focus-visible {
   flex-shrink: 0;
 }
 
-.case-figma-embed {
-  width: 100%;
-  height: 600px;
-  border: none;
-  border-radius: 14px;
-  overflow: hidden;
+.case-figma-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
   margin-top: 2rem;
-  display: block;
+}
+
+.case-figma-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #6e6660;
+  margin-bottom: 0.5rem;
+}
+
+.case-figma-iframe-wrap {
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+.case-figma-scroll-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f5f0e8;
+  border: 0.5px solid #ede8e0;
+  border-radius: 100px;
+  padding: 4px 12px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: #6e6660;
+  margin-bottom: 0.75rem;
+}
+
+.case-figma-scroll-arrow {
+  display: inline-block;
+  animation: case-figma-scroll-bob 1s ease-in-out infinite alternate;
+}
+
+@keyframes case-figma-scroll-bob {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-figma-scroll-arrow {
+    animation: none;
+  }
 }
 
 .case-next {
@@ -1751,8 +1796,8 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .case-figma-embed {
-    height: 420px;
+  .case-figma-grid {
+    grid-template-columns: 1fr;
   }
 
   .case-next {
