@@ -1430,6 +1430,20 @@ button:focus-visible {
   margin-top: 2rem;
 }
 
+.case-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.case-media-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
 .case-accent-card {
   border-top: 2px solid;
   padding-top: 1.25rem;
@@ -1799,6 +1813,14 @@ button:focus-visible {
   .case-grid-2,
   .case-usability-grid {
     grid-template-columns: 1fr;
+  }
+
+  .case-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .case-media-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .case-persona-details {
