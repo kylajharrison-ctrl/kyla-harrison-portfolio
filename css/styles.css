@@ -1649,6 +1649,30 @@ button:focus-visible {
   margin-bottom: 0.9rem;
 }
 
+.case-quote-card {
+  background: var(--color-linen);
+  border-radius: 14px;
+  padding: 1.5rem;
+  border-top: 2px solid #a8b58a;
+}
+
+.case-quote-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.case-quote-attribution {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 11px;
+  color: var(--color-eyebrow-muted);
+  margin-top: 0.75rem;
+}
+
 .case-usability-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
