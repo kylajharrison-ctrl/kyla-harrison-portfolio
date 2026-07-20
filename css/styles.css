@@ -1472,6 +1472,31 @@ button:focus-visible {
   border-left: 3px solid;
 }
 
+.case-pullquote-card {
+  background: var(--color-linen);
+  border-radius: 14px;
+  padding: 1.5rem 2rem;
+  border-left: 3px solid #b46a72;
+  margin-top: 1.5rem;
+}
+
+.case-pullquote-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.case-pullquote-attribution {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 12px;
+  color: var(--color-eyebrow-muted);
+  margin-top: 0.5rem;
+}
+
 .case-finding-title {
   font-family: var(--font-body);
   font-weight: 500;
