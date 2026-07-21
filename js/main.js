@@ -45,3 +45,31 @@
     }
   });
 })();
+
+// Static image carousels (Sun Devil Sync mockups)
+(function () {
+  document.querySelectorAll('.case-carousel-frame').forEach((carousel) => {
+    const images = carousel.dataset.images.split(',');
+    const label = carousel.dataset.label;
+    const img = carousel.querySelector('.case-carousel-img');
+    const counter = carousel.querySelector('.case-carousel-counter');
+    const [prevBtn, nextBtn] = carousel.querySelectorAll('.case-carousel-arrow');
+    let index = 0;
+
+    function render() {
+      img.src = images[index];
+      img.alt = `${label} mockup, image ${index + 1} of ${images.length}`;
+      counter.textContent = `${index + 1} / ${images.length}`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      index = (index - 1 + images.length) % images.length;
+      render();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      index = (index + 1) % images.length;
+      render();
+    });
+  });
+})();

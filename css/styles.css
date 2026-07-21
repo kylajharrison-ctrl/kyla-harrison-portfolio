@@ -1726,18 +1726,18 @@ button:focus-visible {
   flex-shrink: 0;
 }
 
-.case-figma-grid {
+.case-carousel-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
   margin-top: 2rem;
 }
 
-.case-figma-grid > div {
+.case-carousel-grid > div {
   min-width: 0;
 }
 
-.case-figma-label {
+.case-carousel-label {
   font-family: var(--font-body);
   font-size: 11px;
   font-weight: 500;
@@ -1746,58 +1746,54 @@ button:focus-visible {
   margin-bottom: 0.5rem;
 }
 
-.case-figma-iframe-wrap {
-  padding: 0 1rem;
-  overflow: hidden;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.case-figma-iframe-wrap iframe {
+.case-carousel-img {
   width: 100%;
   aspect-ratio: 775 / 500;
   display: block;
-  max-width: 100%;
-  box-sizing: border-box;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+}
+
+.case-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0.75rem;
+}
+
+.case-carousel-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 0.5px solid #ede8e0;
+  background: #f5f0e8;
+  color: #6e6660;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.case-carousel-arrow:hover {
+  background: #ede8e0;
+}
+
+.case-carousel-counter {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: #6e6660;
+  min-width: 32px;
+  text-align: center;
 }
 
 .case-prototype-hint-wrap {
   text-align: center;
   margin-top: 2rem;
-}
-
-.case-figma-scroll-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #f5f0e8;
-  border: 0.5px solid #ede8e0;
-  border-radius: 100px;
-  padding: 4px 12px;
-  font-family: var(--font-body);
-  font-size: 11px;
-  color: #6e6660;
-  margin-bottom: 0.75rem;
-}
-
-.case-figma-scroll-arrow {
-  display: inline-block;
-  animation: case-figma-scroll-bob 1s ease-in-out infinite alternate;
-}
-
-@keyframes case-figma-scroll-bob {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(4px);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .case-figma-scroll-arrow {
-    animation: none;
-  }
 }
 
 .case-next {
@@ -1890,7 +1886,7 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .case-figma-grid {
+  .case-carousel-grid {
     grid-template-columns: 1fr;
   }
 
