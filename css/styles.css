@@ -1733,6 +1733,10 @@ button:focus-visible {
   margin-top: 2rem;
 }
 
+.case-figma-grid > div {
+  min-width: 0;
+}
+
 .case-figma-label {
   font-family: var(--font-body);
   font-size: 11px;
@@ -1745,6 +1749,16 @@ button:focus-visible {
 .case-figma-iframe-wrap {
   padding: 0 1rem;
   overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.case-figma-iframe-wrap iframe {
+  width: 100%;
+  aspect-ratio: 775 / 500;
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .case-prototype-hint-wrap {
