@@ -1796,6 +1796,40 @@ button:focus-visible {
   margin-top: 2rem;
 }
 
+.case-prototype-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f5f0e8;
+  border: 0.5px solid #ede8e0;
+  border-radius: 100px;
+  padding: 4px 12px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: #6e6660;
+  margin-bottom: 0.75rem;
+}
+
+.case-prototype-hint-arrow {
+  display: inline-block;
+  animation: case-prototype-hint-bob 1s ease-in-out infinite alternate;
+}
+
+@keyframes case-prototype-hint-bob {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-prototype-hint-arrow {
+    animation: none;
+  }
+}
+
 .case-next {
   background: var(--color-text);
   padding: 3rem 2.5rem;
